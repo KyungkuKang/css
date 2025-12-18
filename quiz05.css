@@ -1,0 +1,24 @@
+header {border: 1px solid black; background-color: brown; display: flex; width: 600px;}
+#title_logo {width: 100px; height: 100px;}
+img{border-radius: 100px; width: 100px; height:100px;}
+a{ text-decoration: none; color: white;
+    &:hover{
+        border-bottom: 3px solid orange;
+        padding-bottom: 5px;
+        color: orange;
+        transition: 0.5s;
+    }
+}
+ul{list-style: none; display: flex; gap: 12px;}
+#nav{display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+#ul1 > li {font-size: 12px;
+opacity: 0.5;}
+
+ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+
+
+
