@@ -1,3 +1,11 @@
+
+
+
+
+/* 좌우측 목록 문제 */
+
+
+
 #nav {border:1px solid; width: 220px; height: 150px;background-color: white;
 }
 li{width: 110px; list-style: none; text-align: center;
@@ -7,6 +15,8 @@ li{width: 110px; list-style: none; text-align: center;
 }
 .menu1 {display: none; border: 1px solid black; border-radius: 25px; height: 110px; list-style: none; padding: 0;}
 .menu2 {display: none; border: 1px solid black; border-radius: 25px; height: 110px; list-style: none; padding: 0;}
+
+
 #menu li:hover .menu1{height: 110px;
     display: block;
     transition: 1s;
@@ -15,3 +25,8 @@ li{width: 110px; list-style: none; text-align: center;
     display: block;
     transition: 1s;
 }
+/* 둘다펼칠때~ 
+ul:hover .menu1 {height: 110px;
+    display: block;
+    transition: 1s;}
+    */
