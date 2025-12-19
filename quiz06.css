@@ -1,0 +1,17 @@
+#nav {border:1px solid; width: 220px; height: 150px;background-color: white;
+}
+li{width: 110px; list-style: none; text-align: center;
+    margin: 0; padding: 0;
+}
+#menu{background-color: gold; height: 40px; line-height: 40px; display: flex; margin: 0; padding: 0; text-align: center;
+}
+.menu1 {display: none; border: 1px solid black; border-radius: 25px; height: 110px; list-style: none; padding: 0;}
+.menu2 {display: none; border: 1px solid black; border-radius: 25px; height: 110px; list-style: none; padding: 0;}
+#menu li:hover .menu1{height: 110px;
+    display: block;
+    transition: 1s;
+}
+#menu li:hover .menu2{height: 110px;
+    display: block;
+    transition: 1s;
+}
