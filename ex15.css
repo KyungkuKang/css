@@ -1,0 +1,84 @@
+h1 {position: relative; opacity: 0;}
+#left {left: -150px;
+    animation: left 3s;
+    animation-fill-mode: forwards;
+}
+@keyframes left {
+    100% {left: 300px; opacity: 1;}
+}
+#right { right: -500px;
+    animation:right 3s;
+    animation-fill-mode: forwards;
+}
+@keyframes right {
+    100% {right: -150px; opacity: 1;}
+
+#wrap {
+    width: 100px; margin:200px auto; background-color: bisque;
+}
+.block {
+    width: 50px;height: 8px; margin-bottom: 15px;
+    background-color: navy;
+    animation: block 1s infinite;
+}
+@keyframes block {
+    50% { transform: translateX(50px);}
+}
+#wrap .block:nth-of-type(1){ animation-delay: 0.5s;}
+#wrap .block:nth-of-type(3){ animation-delay: 0.5s;}
+#wrap .block.block:nth-of-type(2n){ animation-delay: 1s;}
+
+
+#loading {display: flex; justify-content: center;}
+h2{text-align: center;}
+.logo{
+    width: 20px;height: 20px;background-color: navy;
+    border-radius: 20px; margin: 0 10px;
+    animation: loading 1s infinite;
+}
+#loading :nth-of-type(2) { animation-delay:0.2s;}
+#loading :nth-of-type(3) { animation-delay:0.4s;}
+@keyframes loading {
+    50% {
+        transform: scale(0);
+    }
+}
+
+
+/* ------------ 상자움직이는놀이 ------------*/
+#div1 {
+    width: 200px; height: 200px; background-color: blue;
+    animation: abc 10s;
+}
+@keyframes abc{
+    20%{margin-left: 400px; background-color: red; border-radius: 100px;}
+}
+
+#div2 {
+    width: 200px; height: 200px; background-color: blue;
+    animation: aaa 2s;
+}
+@keyframes aaa{
+    0%{margin-left: 400px; background-color: red; border-radius: 100px;}
+}
+
+#div3 {
+    width: 200px; height: 200px; background-color: blue;
+    animation: bbb 5s infinite;
+    animation-delay: 2s;
+}
+@keyframes bbb{
+    50%{margin-left: 400px; background-color: red;}
+}
+
+#div4 {
+    width: 100px; height: 100px; background-color: gold;
+    animation: box 4s infinite;
+    
+}
+@keyframes box{
+    25%{margin-left: 50px;margin-top: 0px;}
+    55%{margin-left: 50px;margin-top: 50px;}
+    75%{margin-left: 0px;margin-top: 50px;}
+    100%{margin-left: 0px;margin-top: 0px;}    
+}
